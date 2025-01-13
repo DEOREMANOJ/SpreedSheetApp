@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.toolbar {
+  background-color: #dcdcdc;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #388e3c;
+}
+
+#spreadsheet {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+#spreadsheet td,
+#spreadsheet th {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  min-width: 80px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#spreadsheet th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+#spreadsheet td[contenteditable="true"] {
+  background-color: #ffffff;
+}
+
+#spreadsheet td:hover {
+  background-color: #f9f9f9;
+}
+
+#spreadsheet td.selected {
+  background-color: #dcdcdc !important;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #4CAF50;
+}
+
+.cell-dragging {
+  background-color: #e0e0e0 !important;
+}
+
+.cell-drop {
+  border: 2px dashed #4CAF50 !important;
+}
+
+.alert {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.success {
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 12px;
+}
+

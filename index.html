@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheets Mimic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button onclick="addRow()">Add Row</button>
+        <button onclick="addColumn()">Add Column</button>
+        <button onclick="clearSelection()">Clear Selection</button>
+        <button onclick="applyMathematicalFunction('sum')">SUM</button>
+        <button onclick="applyMathematicalFunction('average')">AVERAGE</button>
+        <button onclick="applyMathematicalFunction('max')">MAX</button>
+        <button onclick="applyMathematicalFunction('min')">MIN</button>
+        <button onclick="applyMathematicalFunction('count')">COUNT</button>
+        <button onclick="trimCells()">TRIM</button>
+        <button onclick="toUpper()">UPPER</button>
+        <button onclick="toLower()">LOWER</button>
+        <button onclick="removeDuplicates()">REMOVE DUPLICATES</button>
+        <button onclick="findAndReplace()">FIND & REPLACE</button>
+        <input type="text" id="formulaBar" placeholder="Enter Formula">
+    </div>
+
+    <table id="spreadsheet">
+        <!-- Dynamic rows and columns will be inserted here -->
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>
